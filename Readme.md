@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [ALEKCEI GRETCKII](https://up.htmlacademy.ru/adaptive/19/user/1206661).
-* Наставник: `Неизвестно`.
+* Наставник: [OKSANA SERGEEVA](https://htmlacademy.ru/profile/oksana)
 
 ---
 
