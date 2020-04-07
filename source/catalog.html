@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Магазин "Мишка"</title>
+    </head>
+
+    <body>
+      <header class="page-header">
+        <nav class="main-nav">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image"
+          src="img/bkgd/mishka-logo-mobile-svg-copy@3x.png"
+          width="86" height="35" alt="Магазин Мишка">
+        </a>
+        <button class="main-nav__toggle" type="button">
+          Открыть меню</button>
+          <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a class="main-nav__main">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="main-nav__catalog" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a class="main-nav__order" href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="site-list__item">
+            <a class="main-nav__search" href="#">Поиск по сайту</a>
+          </li>
+          <li class="site-list__item">
+            <a class="main-nav__bin" href="#">Корзина:пока пуста</a>
+          </li>
+          </ul>
+          <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <a class="user-list__login" href="#">Войти</a>
+          </li>
+          </ul>
+      </nav>
+    </header>
+
+    <main class="catalog-main">
+      <h1 class="catalog-main__header first-topic">Каталог товаров</h1>
+
+      <section class="catalog">
+        <div class="catalog__item">
+          <img src="#" width="260" height="195" alt="зайчик">
+          <h2>Зайчик-попрыгайчик</h2>
+          <p>Рост 30 см, вес 200 г</p>
+          <a class="button button__price" href="#">1 200 руб.</a>
+        </div>
+        <div class="catalog__item">
+          <img src="#" width="260" height="195" alt="зайчик">
+          <h2>Корзинка для белья</h2>
+          <p>Диаметр 15 см, высота 10 см</p>
+          <a class="button button__price" href="#">690 руб.</a>
+        </div>
+        <div class="catalog__item">
+          <img src="#" width="260" height="195" alt="зайчик">
+          <h2>Большая корзинка для игрушек</h2>
+          <p>Диаметр 30 см, высота 30 см</p>
+          <a class="button button__price" href="#">1 500 руб.</a>
+        </div>
+      </section>
+
+      <article>
+        <h2>Процесс производства</h2>
+        <video src="#" width="260" height="150"></video>
+        <p>По просьбам наших любимых фолловеров мы сняли для вас
+          подробное видео о том, как появляются наши товары.</p>
+        <a class="button button__order" href="#">Сделать заказ</a>
+      </article>
+
+    </main>
+
+    <footer class="page-footer contacts">
+
+        <ul class="contacts__socials">
+          <li class="contacts__item contacts__item--insta"><a href="#">инстаграм</a></li>
+          <li class="contacts__item contacts__item--fb"><a href="#">фейсбук</a></li>
+          <li class="contacts__item contacts__item--tw"><a href="#">твиттер</a></li>
+        </ul>
+
+        <ul class="contacts__copyright">
+          <li class="contacts__copy contacts__copy--developer">Разработано</li>
+          <li class="contacts__copy contacts__copy--academy"><a href="#">htmlacademy</a></li>
+        </ul>
+    </footer>
+
+    </body>
+
+</html>
