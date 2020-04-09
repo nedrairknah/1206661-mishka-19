@@ -3,19 +3,24 @@
 
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Магазин "Мишка"</title>
     </head>
 
     <body>
       <header class="page-header">
         <nav class="main-nav">
-        <a class="page-header__logo">
-          <img class="page-header__logo-image"
-          src="img/bkgd/mishka-logo-mobile-svg-copy@3x.png"
-          width="86" height="35" alt="Магазин Мишка">
-        </a>
-        <button class="main-nav__toggle" type="button">
-          Открыть меню</button>
+
+          <div class="page-header page-header__wrapper">
+            <a href="index.html" class="page-header__logo">
+              <img class="page-header__logo-image"
+              src="img/bkgd/mishka-logo-mobile-svg-copy@3x.png"
+              width="86" height="35" alt="Магазин Мишка">
+            </a>
+            <button class="main-nav__toggle" type="button">
+              Открыть меню</button>
+            </div>
+
           <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
             <a class="main-nav__main">Главная</a>
@@ -42,9 +47,9 @@
     </header>
 
     <main class="form-main">
-      <h1 class="form-main__header first-topic">Вязание на заказ</h1>
-      <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните
-        простую форму заказа и мы свяжемся с вами, чтобы уточнить
+      <h1 class="form-main__header main-topic">Вязание на заказ</h1>
+      <p class="form-main__text">Мы будем рады воплотить в жизнь
+        ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить
         детали</p>
 
           <form class="form-main__form" action="https://echo.htmlacademy.ru" method="post">
@@ -54,12 +59,12 @@
             <li><input class="visually-hidden form-main__filter"
               type="radio" name="type-group" id="filter-accessory"
               value="accessory" checked>
-            <label for="filter-accessory" class="label-filter">
+            <label for="filter-accessory" class="form-main__label--acc">
               <span>Аксессуар для интерьера</span></label></li>
             <li><input class="visually-hidden form-main__filter"
             type="radio" name="type-group" id="filter-toy"
             value="toy">
-            <label for="filter-toy" class="label-filter">
+            <label for="filter-toy" class="form-main__label--acc">
               <span>Детская игрушка</span></label></li>
           </ul>
         </fieldset>
@@ -67,35 +72,35 @@
       <fieldset>
         <legend class="form-main__legend">цвет</legend>
         <ul>
-          <li class="filter-option">
-            <input checked class="visually-hidden input-checkbox"
+          <li class="form-main__filter">
+            <input checked class="visually-hidden form-main__input"
             type="checkbox" name="white" id="white">
-            <label class="color-checkbox" for="white">Белый</label>
+            <label class="form-main__label--chbx" for="white">Белый</label>
           </li>
-          <li class="filter-option">
-            <input checked class="visually-hidden input-checkbox"
+          <li class="form-main__filter">
+            <input checked class="visually-hidden form-main__input"
             type="checkbox" name="grey" id="grey">
-            <label class="color-checkbox" for="grey">Серый</label>
+            <label class="form-main__label--chbx" for="grey">Серый</label>
           </li>
-          <li class="filter-option">
-            <input class="visually-hidden input-checkbox"
+          <li class="form-main__filter">
+            <input class="visually-hidden form-main__input"
             type="checkbox" name="tiffany" id="tiffany">
-            <label class="color-checkbox" for="tiffany">"Тиффани"</label>
+            <label class="form-main__label--chbx" for="tiffany">"Тиффани"</label>
           </li>
-          <li class="filter-option">
-            <input class="visually-hidden input-checkbox"
+          <li class="form-main__filter">
+            <input class="visually-hidden form-main__input"
             type="checkbox" name="black" id="black">
-            <label class="color-checkbox" for="black">Черный</label>
+            <label class="form-main__label--chbx" for="black">Черный</label>
           </li>
-          <li class="filter-option">
-            <input class="visually-hidden input-checkbox"
+          <li class="form-main__filter">
+            <input class="visually-hidden form-main__input"
             type="checkbox" name="pink" id="pink">
-            <label class="color-checkbox" for="pink">Розовый</label>
+            <label class="form-main__label--chbx" for="pink">Розовый</label>
           </li>
-          <li class="filter-option">
-            <input class="visually-hidden input-checkbox"
+          <li class="form-main__filter">
+            <input class="visually-hidden form-main__input"
             type="checkbox" name="orange" id="orange">
-            <label class="color-checkbox" for="orange">Оранжевый</label>
+            <label class="form-main__label--chbx" for="orange">Оранжевый</label>
           </li>
         </ul>
       </fieldset>
@@ -105,25 +110,30 @@
         <legend class="form-main__legend">фио</legend>
           <ul>
             <li><label for="name">Имя:</label>
-            <input class="form-main__name" type="text" name="name" id="name"
+            <input class="form-main__input form-main__input--name" type="text"
+            name="name" id="name"
             placeholder="Введите ваше имя*" required></li>
 
             <li><label for="surname">Фамилия:</label>
-            <input class="form-main__name" type="text" name="surname" id="surname"
+            <input class="form-main__input form-main__input--name" type="text"
+            name="surname" id="surname"
             placeholder="Укажите фамилию*" required></li>
 
             <li><label for="middlename">Отчество:</label>
-            <input class="form-main__name" type="text" name="middlename" id="middlename"
+            <input class="form-main__input form-main__input--name" type="text"
+            name="middlename" id="middlename"
             placeholder="Отчество, если желаете" ></li>
 
             <li><label for="tel">тел</label>
             <label for="tel"></label>
-            <input class="form-main__tel" type="tel" name="tel" id="tel"
+            <input class="form-main__input form-main__input--tel" type="tel"
+            name="tel" id="tel"
             placeholder="+7 XXX XXX XX XX*" required></li>
 
             <li><label for="email"> e-mail</label>
             <label for="email"></label>
-            <input class="form-main__email" type="email" name="email" id="email"
+            <input class="form-main__input form-main__input--email" type="email"
+            name="email" id="email"
             placeholder="Ваш Email*" required></li>
 
 
@@ -143,16 +153,20 @@
 
     <footer class="page-footer contacts">
 
-          <ul class="contacts__socials">
-            <li class="contacts__item contacts__item--insta"><a href="#">инстаграм</a></li>
-            <li class="contacts__item contacts__item--fb"><a href="#">фейсбук</a></li>
-            <li class="contacts__item contacts__item--tw"><a href="#">твиттер</a></li>
-          </ul>
+      <ul class="contacts__socials">
+        <li class="contacts__item contacts__item--insta"><a href="#">инстаграм</a></li>
+        <li class="contacts__item contacts__item--fb"><a href="#">фейсбук</a></li>
+        <li class="contacts__item contacts__item--tw"><a href="#">твиттер</a></li>
+      </ul>
 
-          <ul class="contacts__copyright">
-            <li class="contacts__copy contacts__copy--developer">Разработано</li>
-            <li class="contacts__copy contacts__copy--academy"><a href="#">htmlacademy</a></li>
-          </ul>
-    </footer>
+      <address>
+        <h3>Разработано</h3>
+          <a href="https://htmlacademy.ru/intensive/adaptive">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09">
+              <path d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/>
+            </svg>
+            <p class="visually-hidden">htmlacademy</p></a>
+      </address>
+  </footer>
   </body>
 </html>
