@@ -2,11 +2,184 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Магазин "Мишка"</title>
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <header class="page-header">
+        <nav class="main-nav">
+
+          <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image"
+          src="img/bkgd/mishka-logo-mobile-svg-copy@3x.png"
+          width="86" height="35" alt="Магазин Мишка">
+        </a>
+        <button class="main-nav__toggle" type="button">
+          Открыть меню</button>
+        </div>
+
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a class="main-nav__item main-nav__item--main">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="main-nav__item main-nav__item--catalog" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a class="main-nav__item main-nav__item--order" href="form.html">Вязание на заказ</a>
+            </li>
+            <li class="site-list__item">
+              <a class="main-nav__item main-nav__item--search" href="#">Поиск по сайту</a>
+            </li>
+            <li class="site-list__item">
+              <a class="main-nav__item main-nav__item--bin" href="#">Корзина:пока пуста</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <a class="user-list__login" href="#">Войти</a>
+          </li>
+          </ul>
+      </nav>
+    </header>
+
+    <main class="page-main">
+
+
+      <h1 class="page-main__header main-topic">Милые штуки ручной работы для дома</h1>
+
+      <section class="range">
+        <ul class="range__list">
+          <li><a href="#" class="range__item">
+            Предметы интерьера
+          </a></li>
+          <li><a href="#" class="range__item">
+            Детские игрушки
+          </a></li>
+        </ul>
+      </section>
+
+      <article class="offer">
+        <div class="offer__wrapper">
+          <h1 class="offer__name">Вязанные корзинки</h1>
+          <span class="offer__legend">
+            товар недели
+          </span>
+        </div>
+        <p class="offer__discrip">Экологически чистая пряжа,
+          ручная работа. Доступны в шести расцветках и трех
+          размерах.</p>
+        <table class="offer__list">
+          <tr>
+            <td class="offer__char">
+              Цвет:
+            </td>
+            <td class="offer__value">
+              "Тиффани"/серый
+            </td>
+            <td class="offer__char">
+              Диаметр:
+            </td>
+            <td class="offer__value">
+              25 см
+            </td>
+            <td class="offer__char">
+              Высота:
+            </td>
+            <td class="offer__value">
+              15 см
+            </td>
+          </tr>
+        </table>
+        <!--<span class="offer__legend offer__legend--bottom">
+          товар недели
+        </span> Я тоже не знаю зачем, но они в видео сказали, что
+        надо продублировать, но возможно это было актуально для legend
+        а у нас теперь спан, поэтому наверно убираю-->
+        <img class="offer__image" src="img/content/triple-set-mobile.jpg"
+        width="260" height="315" alt="товар дня">
+        <p class="offer__price">Цена: 990 руб.</p>
+        <a href="#" class="offer__button">Заказать</a>
+      </article>
+      <section class="about">
+        <h2 class="about__header">Коротко о нас:</h2>
+        <ul class="about__list">
+          <li class="about__item about__item--eco">
+            Экологически чистые материалы
+          </li>
+          <li class="about__item about__item--price">
+            Скандинавский стиль по российской цене
+          </li>
+          <li class="about__item about__item--heart">
+            Увеличивает лайки на фотографиях
+          </li>
+          <li class="about__item about__item--ball">
+            Связано вручную с любовью и умилением
+          </li>
+          <li class="about__item about__item--rocket">
+            Поддержка отечественного производителя
+          </li>
+          <li class="about__item about__item--gift">
+            Поставляется в подарочной упаковке
+          </li>
+        </ul>
+
+        <h2 class="about__review">Отзывы</h2>
+        <div class="about__wrapper slider">
+          <div class="about__text">
+            <blockquote class="about__text">Я молодая мама, но всё равно
+            фотографии не набирали и близко такого количества лайков,
+            как у популярных инстамамоек. В отчаянии, я накупила
+            аксессуаров и игрушек в Мишке, и мои фотографии сразу
+            стали более стильными, а также набирают больше лайков!</blockquote>
+            <cite class="about__author">Анастасия Красильникова</cite>
+            <a href="#" class="about__email">@misssssiskras</a>
+          </div>
+
+          <div class="about__slider">
+              <button class="about__button about__button--prev"
+              type="button">Назад</button>
+              <button class="about__button about__button--next"
+              type="button">Вперёд</button><!-- SLIDER!!!-->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer contacts">
+      <h2 class="contacts__header">Контакты</h2>
+      <ul>
+          <li class="contacts__char">e-mail:</li>
+          <li class="contacts__value"><a href="#">@mimimishkashop.ru</a></li>
+          <li class="contacts__char">адрес:</li>
+          <li class="contacts__value">
+            г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
+          </li>
+      </ul>
+      <div class="contacts__map">
+        <img class="contacts__img" src="img/content/map-mobile@3x.jpg"
+        width="322" height="457"
+        alt="г. Санкт-Петербург, улю Большая Конюшенная, д. 19/8, офис 101">
+      </div>
+      <a href="#" class="contacts__button">Напишите нам</a>
+
+        <ul class="contacts__socials">
+          <li class="contacts__item contacts__item--insta"><a href="#">инстаграм</a></li>
+          <li class="contacts__item contacts__item--fb"><a href="#">фейсбук</a></li>
+          <li class="contacts__item contacts__item--tw"><a href="#">твиттер</a></li>
+        </ul>
+
+        <address class="develop">
+          <p class="develop__title">Разработано</p>
+            <a class="develop__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <svg class="develop__picture" xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09">
+                <path d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/>
+              </svg>
+              <p class="visually-hidden">htmlacademy</p></a>
+        </address>
+    </footer>
 
   </body>
 </html>
