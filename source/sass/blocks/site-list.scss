@@ -1,0 +1,16 @@
+/**область нажатия**/
+.site-list {
+  background-color: #ffffff;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-list__item {
+  width: 320px;
+  text-align: left;
+  font-size: 17px;
+  line-height: 1.41;
+  border-top: solid 1px #ececec;
+}
+

@@ -1,0 +1,264 @@
+.form-main {
+  font-family: OpenSans, Arial, Helvetica, sans-serif;
+  width: 320px;
+  margin: 0 auto;
+
+  &__text {
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.85;
+    letter-spacing: normal;
+    text-align: left;
+    color: #444444;
+    margin: 0;
+    padding-left: 30px;
+    padding-right: 48px;
+    padding-bottom: 30px;
+  }
+
+  &__form {
+    margin-left: 30px;
+  }
+
+  &__fieldset {
+    border: 0;
+    padding: 0;
+  }
+
+  &__legend {
+    font-size: 17px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.94;
+    letter-spacing: normal;
+    text-align: left;
+    color: #63d1bb;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 38px;
+  }
+
+  &__legend::before {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: 62px;
+      width: 198px;
+      height: 1px;
+      background-size: 320px 6px;
+      background-color: #63d1bb;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+  }
+
+  &__item {
+    font-size: 17px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.06;
+    letter-spacing: normal;
+    text-align: left;
+    color:#000000;
+    padding-bottom: 25px;
+  }
+
+  &__item--accessory {
+    width: 130px;
+    padding-left: 62px;
+  }
+
+  &__item--toy {
+    padding-left: 62px;
+  }
+
+
+
+  &__label {
+    position: relative;
+  }
+
+  &__label::before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: -14px;
+    left: -62px;
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    opacity: 0.4;
+    border: 2px solid #444444;
+    border-radius: 50%;
+  }
+
+  &__filter:checked + &__label::after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    opacity: 0.4;
+    border-radius: 50%;
+    background-color: #62d1ba;
+    position: absolute;
+    left: -50px;
+    top: -2px;
+  }
+
+  &__label--chbx {
+    font-size: 17px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.06;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+    padding-bottom: 45px;
+  }
+
+  &__item--chbx {
+    padding-bottom: 45px;
+    padding-left: 64px;
+  }
+
+
+  &__label--chbx {
+    position: relative;
+  }
+
+  &__item input[type="checkbox"] + &__label--chbx::before {
+    content:"";
+    position: absolute;
+    top: -13px;
+    left: -63px;
+    width: 36px;
+    height: 35px;
+    border: 2px solid #444444;
+  }
+
+  &__item input:checked + &__label--chbx::after {
+    content:"";
+    position: absolute;
+    width: 15px;
+    height: 5px;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    transform: rotate(-45deg);
+    top: 0px;
+    left: -50px;
+  }
+
+  &__name {
+    font-size: 17px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.06;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+  }
+
+  &__input {
+    font: inherit;
+    border: 0;
+    border-bottom: solid 2px #000000;
+    background-color: #ffffff;
+    width: 260px;
+    font-size: 17px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.06;
+    letter-spacing: normal;
+    text-align: left;
+    color: rgba(68, 68, 68, 0.3);
+    margin: 0px;
+    padding: 18px 0px;
+    margin-bottom: 24px;
+  }
+
+  &__label--tel {
+    position: relative;
+  }
+
+  &__label--tel::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 222px;
+    width: 25px;
+    height: 24px;
+    background-image: url(../img/icon-phone.svg);
+    background-repeat: no-repeat;
+    opacity: 0.2;
+  }
+
+  &__label--email {
+    position: relative;
+  }
+
+  &__label--email::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 222px;
+    width: 32px;
+    height: 27px;
+    background-image: url(../img/icon-mail.svg);
+    background-repeat: no-repeat;
+    opacity: 0.2;
+  }
+
+  &__label--text {
+    display: block;
+  }
+
+  &__textarea {
+    font: inherit;
+    width: 163px;
+    height: 35px;
+    padding: 18px 80px 89px 17px;
+    resize: none;
+    border: solid 2px #000000;
+  }
+
+  &__cite {
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    text-align: left;
+    color: #444444;
+    padding-top: 18px;
+    padding-bottom: 31px;
+  }
+
+  &__button {
+    text-decoration: none;
+    color: #444444;
+    background-color: #ffffff;
+    border: solid 2px #444444;
+    text-transform: uppercase;
+    line-height: 1.18;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 20px 47px;
+    margin: auto;
+  }
+
+}
+
+//input[type="text"]

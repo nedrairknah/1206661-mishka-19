@@ -1,0 +1,82 @@
+.offer {
+  width: 322px;
+}
+
+.offer__name {
+  padding-left: 33px;
+  margin: 0;
+  margin-top: 34px;
+  font-size: 25px;
+  line-height: 1.2;
+  color: #000000;
+  font-weight: bold;
+}
+
+.offer__legend {
+  text-transform: uppercase;
+  color: #63d1bb;
+  font-size: 17px;
+  line-height: 1.18;
+  font-weight: bold;
+  padding-left: 33px;
+  padding-top: 8px;
+}
+
+.offer__discrip {
+  color: #444444;
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: normal;
+  padding-left: 31px;
+  padding-top: 30px;
+  padding-right: 41px;
+}
+
+.offer__list {
+  font-size: 15px;
+}
+
+.offer__line {
+  border-bottom: solid 1px black;
+}
+
+.offer__char {
+  padding: 15px;
+}
+
+.offer__image {
+  margin: auto;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.offer__price {
+  padding-top: 29px;
+  font-size: 17px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.41;
+  letter-spacing: normal;
+  text-align: center;
+  color: #444444;
+  margin: 0;
+  padding-bottom: 48px;
+  }
+
+.offer__button {
+  text-decoration: none;
+  color: #444444;
+  background-color: #ffffff;
+  border: solid 2px #444444;
+  text-transform: uppercase;
+  line-height: 1.18;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 20px 84px;
+  margin: auto;
+  margin-left: 30px;
+}
+
+
+
