@@ -1,6 +1,75 @@
+// Файл variable.scss
+
+$bg-white: #ffffff;
+$color-textblack: #000000;
+$color-textgrey: #444444;
+$tablet-width: 772px;
+$desktop-width: 1150px;
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+//от 320px мобильная версия
 .body {
   margin: 0;
+  padding: 0;
   font-family: OpenSans, Arial, Helvetica, sans-serif;
+  min-width: 320px;
+}
+
+.body__catalog {
+  margin: 0 auto;
+}
+
+.body__main {
+  margin: 0 auto;
+}
+
+.body__footer {
+  margin: 0 auto;
+}
+
+.body__main {
+  margin: 0 auto;
+}
+
+.body__modal {
+  margin: 0 auto;
+}
+
+.body__heading {
+  font-size: 27px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.11;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+  padding: 76px 43px 74px 42px;
+  margin: 0;
+  background-color: #f1f1f1;
+  margin-bottom: 30px;
+}
+
+
+
+//от 772px планшетная версия
+@media (min-width: 768px) {
+  .container {
+  width: auto;
+  padding: 0 52px;
+  }
+}
+
+//от 1050px десктопная версия
+@media (min-width: 1150px) {
+  .container {
+    width: 1050px;
+    padding: 0 50px;
+  }
 }
 
 .body__page-header {

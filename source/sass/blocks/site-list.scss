@@ -2,9 +2,13 @@
 .site-list {
   background-color: #ffffff;
   list-style: none;
-  margin: 0;
   padding: 0;
 }
+
+//Чтобы скрыть меню - раскоментируй
+//.site-list--closed {
+//  display: none;
+//}
 
 .site-list__item {
   width: 320px;

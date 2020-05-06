@@ -1,0 +1,120 @@
+.modal {
+  width: 320px;
+  font-family: OpenSans, Arial, Helvetica, sans-serif;
+  display: block;
+  justify-content: space-between;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+}
+
+.modal__header {
+  background-color: #ffffff;
+  width: 136px;
+  font-size: 25px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+  margin: 0 auto;
+  margin-top: 36px;
+  margin-bottom: 25px;
+}
+
+.modal__form {
+  //border: solid 2px black;
+  box-shadow: 0px 5px 10px 0 rgba(0, 1, 1, 0.25);
+  border: solid 1px #c6c6c6;
+  background-color: #ffffff;
+}
+
+.modal__text {
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: center;
+  color: #444444;
+}
+
+.modal__list {
+ list-style: none;
+ display: flex;
+ justify-content: flex-start;
+ flex-wrap: wrap;
+ padding: 0;
+ margin-left: 30px;
+ //margin-right: 30px;
+}
+
+.modal__item {
+  font-size: 17px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.94;
+  letter-spacing: normal;
+  text-align: center;
+  color: #444444;
+  //border: solid 2px #ececec;
+  //padding: 18px 34px;
+  cursor: pointer;
+  &:not(:nth-child(3n)) {
+    margin-right: 7px;
+  }
+}
+
+.modal__button {
+  border: 0;
+  font-size: 17px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.94;
+  letter-spacing: normal;
+  text-align: center;
+  color:#ffffff;
+  background-color: #63d1bb;
+  text-transform: uppercase;
+  padding: 20px 83px 16px 82px;
+  margin-left: 30px;
+  margin-bottom: 46px;
+  margin-top: 30px;
+}
+
+.modal__label {
+  position: relative;
+  //padding: 18px 34px;
+}
+
+.modal__filter:checked + .modal__label::after {
+  content: "";
+  display: block;
+  width: 78px;
+  height: 48px;
+  //background-color: #62d1ba;
+  position: absolute;
+  left: -41px;
+  top: 0px;
+  border: solid 2px #63d1bb;
+}
+
+.modal__choice {
+  display: flex;
+  cursor: pointer;
+  width: 78px;
+  height: 48px;
+  //padding: 18px 0px;
+  border: solid 2px #ececec;
+  //padding-top: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}

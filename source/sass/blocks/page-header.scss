@@ -36,3 +36,23 @@
   padding: 30px;
   background-position: center;
 }
+
+.page-header__toggle--opened {
+  background-image: url("../img/icon-menu-close.svg");
+  background-size: 21px 20px;
+}
+
+@media (min-width: 768px) {
+
+  .page-header__logo-image,
+  .page-header__toggle {
+    display: none
+  }
+
+  .page-header__logo-image--tablet {
+    display: block;
+  }
+
+
+
+}
