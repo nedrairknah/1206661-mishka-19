@@ -15,7 +15,7 @@ img {
 .body {
   margin: 0;
   padding: 0;
-  font-family: OpenSans, Arial, Helvetica, sans-serif;
+  font-family: "OpenSans", "Arial", "Helvetica", sans-serif;
   min-width: 320px;
 }
 
@@ -28,10 +28,6 @@ img {
 }
 
 .body__footer {
-  margin: 0 auto;
-}
-
-.body__main {
   margin: 0 auto;
 }
 
@@ -54,13 +50,11 @@ img {
   margin-bottom: 30px;
 }
 
-
-
 //от 772px планшетная версия
 @media (min-width: 768px) {
   .container {
-  width: auto;
-  padding: 0 52px;
+    width: auto;
+    padding: 0 52px;
   }
 }
 

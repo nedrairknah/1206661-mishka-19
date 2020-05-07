@@ -1,12 +1,11 @@
 .catalog {
-  font-family: OpenSans, Arial, Helvetica, sans-serif;
+  font-family: "OpenSans", "Arial", "Helvetica", sans-serif;
   background-image: url("../img/hero-mobile@3x.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 0 0;
   width: 320px;
 }
-
 
 .catalog__item {
   border: solid 1px #ececec;
@@ -67,13 +66,12 @@
   padding-left: 28px;
   padding-right: 111px;
   font-size: 15px;
-  font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.6;
   letter-spacing: normal;
   text-align: left;
-  color:#000000;
+  color: #000000;
 }
 
 .catalog__button {

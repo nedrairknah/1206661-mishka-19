@@ -1,16 +1,16 @@
 .page-header {
-    background-color: #ffffff;
-    font-family: OpenSans, Arial, Helvetica, sans-serif;
-    font-size: 17px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.41;
-    letter-spacing: normal;
-    text-align: left;
-    color: #ffffff;
-    width: 320px;
-    text-decoration: none;
+  background-color: #ffffff;
+  font-family: "OpenSans", "Arial", "Helvetica", sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.41;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  width: 320px;
+  text-decoration: none;
 }
 
 .page-header__wrapper {
@@ -43,16 +43,12 @@
 }
 
 @media (min-width: 768px) {
-
   .page-header__logo-image,
   .page-header__toggle {
-    display: none
+    display: none;
   }
 
   .page-header__logo-image--tablet {
     display: block;
   }
-
-
-
 }
