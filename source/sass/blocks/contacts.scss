@@ -1,4 +1,6 @@
 .contacts__header {
+  margin: 0 auto;
+  padding: 0;
   position: relative;
   padding-top: 95px;
   padding-left: 30px;
@@ -8,7 +10,6 @@
   content: "";
   position: absolute;
   top: 34px;
-  left: 10px;
   width: 320px;
   height: 6px;
   display: block;

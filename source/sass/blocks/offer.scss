@@ -1,11 +1,11 @@
 .offer {
-  width: 322px;
+  width: 320px;
 }
 
 .offer__name {
   padding-left: 33px;
-  margin: 0;
-  margin-top: 34px;
+  margin: 0 auto;
+  padding-top: 34px;
   font-size: 25px;
   line-height: 1.2;
   color: #000000;
@@ -51,7 +51,8 @@
 }
 
 .offer__price {
-  padding-top: 29px;
+  margin: 0 auto;
+  //padding-top: 29px;
   font-size: 17px;
   font-weight: bold;
   font-stretch: normal;
@@ -60,8 +61,7 @@
   letter-spacing: normal;
   text-align: center;
   color: #444444;
-  margin: 0;
-  padding-bottom: 48px;
+  //padding-bottom: 48px;
 }
 
 .offer__button {

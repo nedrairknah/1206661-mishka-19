@@ -1,16 +1,3 @@
-// Файл variable.scss
-
-$bg-white: #ffffff;
-$color-textblack: #000000;
-$color-textgrey: #444444;
-$tablet-width: 772px;
-$desktop-width: 1150px;
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 //от 320px мобильная версия
 .body {
   margin: 0;
@@ -33,6 +20,15 @@ img {
 
 .body__modal {
   margin: 0 auto;
+  width: 320px;
+  font-family: "OpenSans", "Arial", "Helvetica", sans-serif;
+  display: block;
+  justify-content: space-between;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
 }
 
 .body__heading {
@@ -50,7 +46,7 @@ img {
   margin-bottom: 30px;
 }
 
-//от 772px планшетная версия
+//от 768px планшетная версия
 @media (min-width: 768px) {
   .container {
     width: auto;
@@ -59,7 +55,7 @@ img {
 }
 
 //от 1050px десктопная версия
-@media (min-width: 1150px) {
+@media (min-width: 1050px) {
   .container {
     width: 1050px;
     padding: 0 50px;

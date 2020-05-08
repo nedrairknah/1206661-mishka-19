@@ -28,13 +28,14 @@
 }
 
 .form-main__legend {
+  margin: 0;
+  text-align: left;
   font-size: 17px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: 0.94;
   letter-spacing: normal;
-  text-align: left;
   color: #63d1bb;
   text-transform: uppercase;
   position: relative;
@@ -182,7 +183,6 @@
   border: 0;
   border-bottom: solid 2px #000000;
   background-color: #ffffff;
-  width: 260px;
   font-size: 17px;
   font-weight: normal;
   font-stretch: normal;

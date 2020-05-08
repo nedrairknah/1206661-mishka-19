@@ -25,6 +25,10 @@
   align-items: center;
 }
 
+.page-header__logo-image--tablet {
+  display: none;
+}
+
 .page-header__toggle {
   cursor: pointer;
   background-color: #ffffff;
