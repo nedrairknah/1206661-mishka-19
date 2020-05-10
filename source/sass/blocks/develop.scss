@@ -1,0 +1,27 @@
+.develop {
+  background-color: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.develop__title {
+  font-style: normal;
+  margin: 0;
+  font-size: 20px;
+  line-height: 0.95;
+  font-weight: bold;
+  padding-right: 30px;
+  position: relative;
+}
+
+.develop__title::before {
+  content: "";
+  position: absolute;
+  top: -28px;
+  left: -38px;
+  background-color: #ececec;
+  width: 260px;
+  height: 1px;
+}
