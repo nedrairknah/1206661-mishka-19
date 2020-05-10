@@ -27,7 +27,8 @@
   padding: 0;
 }
 
-.form-main__legend {
+.form-main__legend,
+.form-main__contacts {
   margin: 0;
   text-align: left;
   font-size: 17px;
@@ -40,9 +41,11 @@
   text-transform: uppercase;
   position: relative;
   padding-bottom: 38px;
+  padding-right: 150px;
 }
 
-.form-main__legend::before {
+.form-main__legend::before,
+.form-main__contacts::before {
   content: "";
   position: absolute;
   top: 6px;
@@ -168,6 +171,7 @@
 }
 
 .form-main__name {
+  padding-right: 100px;
   font-size: 17px;
   font-weight: bold;
   font-stretch: normal;
@@ -180,6 +184,7 @@
 
 .form-main__input {
   font: inherit;
+  width: 260px;
   border: 0;
   border-bottom: solid 2px #000000;
   background-color: #ffffff;
@@ -196,11 +201,11 @@
   margin-bottom: 24px;
 }
 
-.form-main__label--tel {
+.form-main__contacts--tel {
   position: relative;
 }
 
-.form-main__label--tel::after {
+.form-main__contacts--tel::after {
   content: "";
   position: absolute;
   top: 30px;
@@ -212,11 +217,11 @@
   opacity: 0.2;
 }
 
-.form-main__label--email {
+.form-main__contacts--email {
   position: relative;
 }
 
-.form-main__label--email::after {
+.form-main__contacts--email::after {
   content: "";
   position: absolute;
   top: 30px;
@@ -239,6 +244,7 @@
   padding: 18px 80px 89px 17px;
   resize: none;
   border: solid 2px #000000;
+  margin-top: 23px;
 }
 
 .form-main__cite {
@@ -268,4 +274,6 @@
   margin: auto;
 }
 
-//input[type="text"]
+.form-main__color-names {
+  width: 150px;
+}

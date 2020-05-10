@@ -47,6 +47,21 @@
 }
 
 @media (min-width: 768px) {
+  .page-header {
+    width: 768px;
+  }
+
+  .page-header__bag {
+    width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  .page-header__wrapper {
+    align-items: flex-start;
+  }
+
   .page-header__logo-image,
   .page-header__toggle {
     display: none;

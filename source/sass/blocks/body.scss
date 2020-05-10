@@ -1,4 +1,5 @@
 //от 320px мобильная версия
+@media (max-width: 767px) {
 .body {
   margin: 0;
   padding: 0;
@@ -20,15 +21,10 @@
 
 .body__modal {
   margin: 0 auto;
-  width: 320px;
-  font-family: "OpenSans", "Arial", "Helvetica", sans-serif;
-  display: block;
-  justify-content: space-between;
   position: fixed;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background-color: #ffffff;
 }
 
 .body__heading {
@@ -45,9 +41,18 @@
   background-color: #f1f1f1;
   margin-bottom: 30px;
 }
-
+}
 //от 768px планшетная версия
 @media (min-width: 768px) {
+  .body {
+    width: 768px;
+    margin: 0;
+  }
+
+  .body__page-header{
+   // margin: 1px;
+  }
+
   .container {
     width: auto;
     padding: 0 52px;
@@ -60,8 +65,10 @@
     width: 1050px;
     padding: 0 50px;
   }
-}
+
 
 .body__page-header {
   margin: 0 auto;
+
+}
 }

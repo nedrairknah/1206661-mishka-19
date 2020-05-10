@@ -17,3 +17,25 @@
   line-height: 1.41;
   border-top: solid 1px #ececec;
 }
+
+@media (min-width: 768px) {
+  .site-list__item--search {
+    border: solid 1px #ececec;
+    width: 82px;
+  }
+
+  .site-list__item--bin {
+    border: solid 1px #ececec;
+  }
+
+  .site-list__item {
+  }
+  .site-list__item--catalog,
+  .site-list__item--form {
+    display: none;
+  }
+}
+
+@media (min-width: 1050px) {
+
+}

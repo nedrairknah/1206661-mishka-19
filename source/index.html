@@ -11,36 +11,37 @@
 
     <header class="body__page-header page-header">
         <nav class="main-nav">
+          <div class="page-header__bag">
+            <div class="page-header__wrapper">
+              <a class="page-header__logo">
+              <img class="page-header__logo-image"
+              src="img/logo-mobile.svg"
+              width="86" height="35" alt="Магазин Мишка">
+              <img class="page-header__logo-image
+              page-header__logo-image--tablet"
+              src="img/logo-tablet.svg"
+              width="112" height="46" alt="Магазин Мишка">
+              </a>
+              <button class="page-header__toggle page-header__toggle--opened" aria-label="Окрыть меню" type="button">
+              </button>
+            </div>
 
-          <div class="page-header__wrapper">
-          <a class="page-header__logo">
-          <img class="page-header__logo-image"
-          src="img/logo-mobile.svg"
-          width="86" height="35" alt="Магазин Мишка">
-          <img class="page-header__logo-image
-          page-header__logo-image--tablet"
-          src="img/logo-tablet.svg"
-          width="112" height="46" alt="Магазин Мишка">
-          </a>
-          <button class="page-header__toggle page-header__toggle--opened" aria-label="Окрыть меню" type="button">
-          </button>
+            <ul class="main-nav__list site-list site-list--closed"><!--чтобы скрыть класс site-list--closed-->
+              <li class="site-list__item site-list__item--catalog">
+                <a class="main-nav__item main-nav__item--catalog" href="catalog.html">Каталог товаров</a>
+              </li>
+              <li class="site-list__item site-list__item--form">
+                <a class="main-nav__item main-nav__item--order" href="form.html">Вязание на заказ</a>
+              </li>
+              <li class="site-list__item site-list__item--search">
+                <a class="main-nav__item main-nav__item--search" href="#">Поиск по сайту</a>
+              </li>
+              <li class="site-list__item site-list__item--bin">
+                <a class="main-nav__item main-nav__item--bin" href="#">Корзина: пока пуста</a>
+              </li>
+            </ul>
           </div>
-
-          <ul class="main-nav__list site-list site-list--closed"><!--чтобы скрыть класс site-list--closed-->
-            <li class="site-list__item">
-              <a class="main-nav__item main-nav__item--catalog" href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="site-list__item">
-              <a class="main-nav__item main-nav__item--order" href="form.html">Вязание на заказ</a>
-            </li>
-            <li class="site-list__item">
-              <a class="main-nav__item main-nav__item--search" href="#">Поиск по сайту</a>
-            </li>
-            <li class="site-list__item">
-              <a class="main-nav__item main-nav__item--bin" href="#">Корзина: пока пуста</a>
-            </li>
-          </ul>
-      </nav>
+        </nav>
     </header>
 
     <main class="page-main body__main">
