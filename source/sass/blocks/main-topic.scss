@@ -7,5 +7,28 @@
   letter-spacing: normal;
   text-align: center;
   color: #000000;
-  padding: 76px 43px 74px 42px;
+  padding: 73px 35px 123px 32px;
+}
+
+@media (min-width: 768px) {
+  .main-topic {
+    font-size: 43px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.16;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+    padding-top: 152px;
+    padding-bottom: 374px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .main-topic {
+    font-size: 53px;
+    line-height: 1.08;
+    padding-bottom: 359px;
+  }
 }

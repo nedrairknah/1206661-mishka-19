@@ -18,6 +18,7 @@
   background-color: #ffffff;
   align-items: center;
   display: flex;
+  margin-bottom: -5px;
 }
 
 .page-header__logo-image {
@@ -25,7 +26,8 @@
   align-items: center;
 }
 
-.page-header__logo-image--tablet {
+.page-header__logo-image--tablet,
+.page-header__logo-image--desktop {
   display: none;
 }
 
@@ -37,37 +39,82 @@
   background-repeat: no-repeat;
   width: 20px;
   height: 20px;
-  padding: 30px;
+  padding: 37px;
   background-position: center;
 }
 
-.page-header__toggle--opened {
-  background-image: url("../img/icon-menu-close.svg");
-  background-size: 21px 20px;
+// .page-header__toggle--opened {
+//   background-image: url("../img/icon-menu-close.svg");
+//   background-size: 21px 20px;
+// }
+
+.page-header__text {
+  display: none;
 }
 
+
 @media (min-width: 768px) {
-  .page-header {
-    width: 768px;
+  .page-header__text {
+    position: absolute;
+    left: 488px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    text-align: right;
+    font-size: 15px;
+    display: block;
+    z-index: 1;
+    color: #444444;
+    top: 91px;
   }
 
-  .page-header__bag {
-    width: 768px;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
+  .page-header {
+    width: 100%;
   }
 
   .page-header__wrapper {
     align-items: flex-start;
+    width: 370px;
+    padding: 0;
+    margin-bottom: 0;
   }
 
   .page-header__logo-image,
-  .page-header__toggle {
+  .page-header__toggle,
+  .page-header__logo-image--desktop {
     display: none;
   }
 
   .page-header__logo-image--tablet {
     display: block;
+    padding: 22px 37px 22px 48px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-header {
+    background-color: transparent;
+  }
+
+  .page-header__text {
+    left: 868px;
+    top: 91px;
+    z-index: 1;
+    color: #444444;
+  }
+
+  .page-header__logo-image--desktop {
+    padding: 8px 10px 8px 500px;
+    display: block;
+  }
+
+  .page-header__wrapper {
+    width: 750px;
+  }
+
+  .page-header__logo-image--tablet {
+    display: none;
   }
 }

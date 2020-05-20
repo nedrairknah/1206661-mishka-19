@@ -2,3 +2,9 @@
   font-family: "OpenSans", "Arial", "Helvetica", sans-serif;
   width: 320px;
 }
+
+@media (min-width: 768px) {
+  .page-footer {
+    width: 100%;
+  }
+}

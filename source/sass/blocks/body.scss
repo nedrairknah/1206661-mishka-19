@@ -7,6 +7,10 @@
     min-width: 320px;
   }
 
+  .body__page-header {
+    margin: 0 auto;
+  }
+
   .body__catalog {
     margin: 0 auto;
   }
@@ -45,6 +49,10 @@
 
 //от 768px планшетная версия
 @media (min-width: 768px) {
+  .body__main {
+    width: 100%;
+  }
+
   .body {
     width: 768px;
     margin: 0;
@@ -57,14 +65,25 @@
 }
 
 //от 1050px десктопная версия
-@media (min-width: 1050px) {
-  .container {
-    width: 1050px;
-    padding: 0 50px;
+@media (min-width: 1150px) {
+  .body__main {
+    width: 100%;
+    margin-top: -71px;
+    z-index: -10px;
+  }
+
+  .body {
+    width: 1150px;
+    margin: 0;
   }
 
 
+  .container {
+    width: 1150px;
+    padding: 0 50px;
+  }
+
   .body__page-header {
-    margin: 0 auto;
+    margin-bottom: -70px;
   }
 }
