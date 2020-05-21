@@ -1,70 +1,91 @@
 //от 320px мобильная версия
-@media (max-width: 767px) {
-  .body {
-    margin: 0;
-    padding: 0;
-    font-family: "OpenSans", "Arial", "Helvetica", sans-serif;
-    min-width: 320px;
-  }
+.body {
+  margin: 0;
+  padding: 0;
+  font-family: "OpenSans", "Arial", "Helvetica", sans-serif;
+  min-width: 320px;
+}
 
-  .body__catalog {
+.body__page-header {
+  margin: 0 auto;
+}
+
+.body__catalog {
+  margin: 0 auto;
+}
+
+.body__main {
+  margin: 0 auto;
+}
+
+.body__footer {
+  margin: 0 auto;
+}
+
+.body__modal {
+  margin: 0 auto;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.body__heading {
+  font-size: 27px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.11;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+  padding: 76px 43px 74px 42px;
+  margin: 0;
+  background-color: #f1f1f1;
+  margin-bottom: 30px;
+}
+
+
+//от 768px планшетная версия
+@media (min-width: 768px) {
+  .body__modal {
     margin: 0 auto;
   }
 
   .body__main {
-    margin: 0 auto;
+    width: 100%;
   }
 
-  .body__footer {
-    margin: 0 auto;
-  }
-
-  .body__modal {
-    margin: 0 auto;
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .body__heading {
-    font-size: 27px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.11;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000000;
-    padding: 76px 43px 74px 42px;
-    margin: 0;
-    background-color: #f1f1f1;
-    margin-bottom: 30px;
-  }
-}
-
-//от 768px планшетная версия
-@media (min-width: 768px) {
   .body {
     width: 768px;
-    margin: 0;
+    margin: 0 auto;
   }
 
-  .container {
-    width: auto;
-    padding: 0 52px;
-  }
+  // .container {
+  //   width: auto;
+  //   padding: 0 52px;
+  // }
 }
 
 //от 1050px десктопная версия
-@media (min-width: 1050px) {
-  .container {
-    width: 1050px;
-    padding: 0 50px;
+@media (min-width: 1150px) {
+  .body__main {
+    width: 100%;
+    margin-top: -71px;
+    z-index: -10px;
+  }
+
+  .body {
+    width: 1150px;
   }
 
 
+  .container {
+    width: 1150px;
+    padding: 0 50px;
+  }
+
   .body__page-header {
-    margin: 0 auto;
+    margin-bottom: -70px;
   }
 }

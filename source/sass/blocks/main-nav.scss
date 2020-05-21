@@ -1,13 +1,14 @@
 .main-nav__list {
   margin: 0;
+  //display: none;
 }
 
 .main-nav__item {
   text-decoration: none;
   color: #000000;
-  padding-top: 32px;
+  padding-top: 26px;
   padding-bottom: 30px;
-  padding-left: 76px;
+  padding-left: 75px;
   width: calc(100% - 76px);
   display: block;
 }
@@ -19,8 +20,8 @@
 .main-nav__item--search::before {
   content: "";
   position: absolute;
-  top: 30px;
-  left: 45px;
+  top: 29px;
+  left: 32px;
   width: 21px;
   height: 18px;
   background-image: url("../img/icon-search.svg");
@@ -38,8 +39,8 @@
 .main-nav__item--bin::before {
   content: "";
   position: absolute;
-  top: 30px;
-  left: 45px;
+  top: 26px;
+  left: 30px;
   width: 21px;
   height: 20px;
   background-image: url("../img/icon-cart.svg");
@@ -49,19 +50,44 @@
 }
 
 @media (min-width: 768px) {
+  .main-nav__item--catalog {
+    margin: 0;
+  }
+
+  .main-nav__item {
+    padding-left: 0;
+  }
+
+  .main-nav__item--bin::before {
+    left: 30px;
+    top: 33px;
+  }
+
+  .main-nav__item--bin {
+    width: 75%;
+    padding-top: 30px;
+    padding-left: 81px;
+  }
+
   .main-nav__list {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .main-nav {
     display: flex;
     flex-wrap: wrap;
+    position: relative;
+    border-bottom: solid 1px #ececec;
   }
 
   .main-nav__item--search {
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
+    width: 100%;
+    left: -2px;
+    top: 5px;
   }
 
   .main-nav__item--search::before {
@@ -69,6 +95,50 @@
   }
 }
 
-// @media (min-width: 1050px) {
+@media (min-width: 1150px) {
+  .main-nav__item--search {
+    border: solid 1px #ececec;
+    border-top: none;
+    border-bottom: none;
+    padding-top: 27px;
+    height: 31px;
+    margin-top: -5px;
+  }
 
-// }
+  .main-nav__item--sale {
+    padding-left: 34px;
+    font-size: 15px;
+    padding-top: 23px;
+  }
+
+  .main-nav__item--new {
+    margin: 0;
+    padding-top: 21px;
+    padding-right: 26px;
+    padding-left: 51px;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .main-nav__list {
+    margin-top: -89px;
+    background-color: transparent;
+    // z-index: -1;
+  }
+
+  .main-nav__item--catalog {
+    padding-left: 49px;
+    padding-top: 31px;
+    padding-bottom: 33px;
+  }
+
+  .main-nav__item--order {
+    padding-left: 34px;
+    padding-top: 30px;
+    padding-bottom: 34px;
+  }
+
+  .main-nav {
+    border-bottom: none;
+  }
+}
