@@ -100,6 +100,7 @@
   position: absolute;
   left: -41px;
   top: 0;
+  //top: 18px; for Firefox
   border: solid 2px #63d1bb;
 }
 
@@ -114,4 +115,48 @@
   text-align: center;
   align-items: center;
   justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .modal {
+    width: 566px;
+  }
+
+  .modal__header {
+    font-size: 30px;
+    line-height: 1.9;
+    width: auto;
+    text-transform: uppercase;
+    margin-top: 33px;
+    padding-left: 4px;
+    margin-bottom: 0;
+  }
+
+  .modal__text {
+    margin: 0;
+    padding-top: 12px;
+    font-size: 17px;
+  }
+
+  .modal__list {
+    margin-left: 108px;
+    margin-top: 19px;
+    margin-bottom: 0;
+  }
+
+  .modal__choice {
+    width: 108px;
+  }
+
+  .modal__filter:checked + .modal__label::after {
+    width: 108px;
+    left: -56px;
+  }
+
+  .modal__button {
+    padding: 20px 126px 17px 128px;
+    margin-left: 108px;
+    margin-bottom: 46px;
+    margin-top: 31px;
+  }
 }

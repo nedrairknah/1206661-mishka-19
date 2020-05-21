@@ -73,18 +73,37 @@
 }
 
 @media (min-width: 768px) {
-  .range__list::after {
+  .range {
+    width: 100%;
+    position: relative;
+    margin-top: -119px;
+  }
+
+  .range::after {
     content: "";
     position: absolute;
-    width: 679px;
+    width: 768px;
     height: 24px;
     background-image: url("../img/bkgd/zigzag-fill-desktop-svg.svg");
     background-position: 0 0;
     top: 106px;
-    left: -11px;
+    left: 0;
     background-size: 768px 24px;
     background-repeat: no-repeat;
   }
+
+  // .range__list::after {
+  //   content: "";
+  //   position: absolute;
+  //   width: 679px;
+  //   height: 24px;
+  //   background-image: url("../img/bkgd/zigzag-fill-desktop-svg.svg");
+  //   background-position: 0 0;
+  //   top: 106px;
+  //   left: -11px;
+  //   background-size: 768px 24px;
+  //   background-repeat: no-repeat;
+  // }
 
   .range__list {
     display: flex;
@@ -118,12 +137,16 @@
 }
 
 @media (min-width: 1150px) {
-  .range__list::after {
-    width: 1088px;
+  .range {
+    margin-top: -119px;
+  }
+
+  .range::after {
+    width: 1150px;
     height: 16px;
     background-size: auto 37px;
     top: 102px;
-    left: -38px;
+    left: 0;
   }
 
   .range__link {

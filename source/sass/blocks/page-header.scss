@@ -96,6 +96,21 @@
 @media (min-width: 1150px) {
   .page-header {
     background-color: transparent;
+    position: relative;
+  }
+
+  .page-header::after {
+    content: "";
+    position: absolute;
+    top: 87px;
+    left: 0;
+    background-color: #ececec;
+    width: 1150px;
+    height: 1px;
+  }
+
+  .page-header--catalog::after {
+    top: 88px;
   }
 
   .page-header__text {
@@ -106,12 +121,18 @@
   }
 
   .page-header__logo-image--desktop {
-    padding: 8px 10px 8px 500px;
+    padding: 8px 10px 8px 25px;
     display: block;
+    background-color: transparent;
+    z-index: 100;
+    //margin-left: 475px;
   }
 
   .page-header__wrapper {
-    width: 750px;
+    width: auto;
+    background-color: transparent;
+    z-index: 90;
+    margin-left: 475px;
   }
 
   .page-header__logo-image--tablet {

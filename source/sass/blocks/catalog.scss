@@ -109,6 +109,7 @@
   .catalog__video {
     margin-top: 51px;
     margin-bottom: 60px;
+    margin-left: 49px;
   }
 
   .catalog__wrapper::before {
@@ -124,6 +125,7 @@
   .catalog__info--wrap {
     border: solid 1px #ececec;
     margin-top: 49px;
+    margin-right: 49px;
   }
 
   // .catalog__button {
@@ -197,6 +199,10 @@
 }
 
 @media (min-width: 1150px) {
+  .catalog {
+    width: calc(100% - 49px);
+  }
+
   .catalog__video {
     border: solid 1px #ececec;
     margin-left: 49px;

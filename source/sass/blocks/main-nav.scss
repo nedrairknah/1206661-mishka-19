@@ -78,6 +78,7 @@
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    border-bottom: solid 1px #ececec;
   }
 
   .main-nav__item--search {
@@ -95,6 +96,15 @@
 }
 
 @media (min-width: 1150px) {
+  .main-nav__item--search {
+    border: solid 1px #ececec;
+    border-top: none;
+    border-bottom: none;
+    padding-top: 27px;
+    height: 31px;
+    margin-top: -5px;
+  }
+
   .main-nav__item--sale {
     padding-left: 34px;
     font-size: 15px;
@@ -113,6 +123,7 @@
   .main-nav__list {
     margin-top: -89px;
     background-color: transparent;
+    // z-index: -1;
   }
 
   .main-nav__item--catalog {
@@ -125,5 +136,9 @@
     padding-left: 34px;
     padding-top: 30px;
     padding-bottom: 34px;
+  }
+
+  .main-nav {
+    border-bottom: none;
   }
 }

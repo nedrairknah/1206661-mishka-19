@@ -92,7 +92,7 @@
     font-size: 15px;
     padding-left: 89px;
     padding-top: 32px;
-    width: 588px;
+    width: 536px;
     order: 3;
     margin: 0;
     line-height: 2;
@@ -127,6 +127,7 @@
     line-height: 1.2;
     letter-spacing: normal;
     text-align: left;
+    width: 350px;
   }
 
   .video__video {
@@ -134,13 +135,12 @@
     background-image: url("../img/video-tablet@1x.jpg");
     width: 668px;
     height: 455px;
-    margin-left: 49px;
   }
 
   .video {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: calc(100% - 100px);
   }
 }
 

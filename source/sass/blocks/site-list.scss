@@ -7,9 +7,9 @@
 }
 
 //Чтобы скрыть меню - раскоментируй
-.site-list--closed {
-  display: none;
-}
+// .site-list--closed {
+//   display: none;
+// }
 
 .site-list__item {
   width: 320px;
@@ -19,18 +19,27 @@
   border-top: solid 1px #ececec;
 }
 
+.site-list__item--new,
+.site-list__item--sale {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .site-list__item--search {
     border: solid 1px #ececec;
     width: 82px;
     order: -2;
+    border-top-style: none;
+    border-bottom-style: none;
   }
 
   .site-list__item--bin {
-    border: solid 1px #ececec;
+    //border: solid 1px #ececec;
     width: 308px;
     order: -1;
     border-right-color: transparent;
+    border-top-style: none;
+    border-bottom-style: none;
   }
 
   // .site-list__item {
@@ -85,6 +94,7 @@
 
   .site-list__item--search {
     margin-left: 750px;
+    border: 0;
   }
 
   .site-list__item {
@@ -93,17 +103,19 @@
 
   .site-list__item--catalog {
     top: 0;
-    left: -1px;
+    left: 0;
     width: 234px;
-    border: solid 1px #ececec;
+    //border: solid 1px #ececec;
+    z-index: 5;
   }
 
   .site-list__item--form {
     top: 0;
-    left: 234px;
+    left: 235px;
     width: 240px;
-    border: solid 1px #ececec;
-    border-right-style: none;
+    border-left: solid 1px #ececec;
+    //border-right-style: none;
+    z-index: 5;
   }
 }
 

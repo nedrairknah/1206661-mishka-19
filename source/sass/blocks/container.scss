@@ -10,6 +10,21 @@
   z-index: 9999;
 }
 
+//Чтобы увидеть модальное окно - закккоментируй
 .container--closed {
   display: none;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-top: 50%;
+  }
+}
+
+@media (min-width: 1150px) {
+  .container {
+    padding-left: 291px;
+    padding-right: 340px;
+    padding-top: 25%;
+  }
 }
