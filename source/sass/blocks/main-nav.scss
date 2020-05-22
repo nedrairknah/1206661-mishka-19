@@ -96,6 +96,11 @@
 }
 
 @media (min-width: 1150px) {
+  .main-nav__item--search::before {
+    left: 34px;
+    top: 36px;
+  }
+
   .main-nav__item--search {
     border: solid 1px #ececec;
     border-top: none;
@@ -103,6 +108,7 @@
     padding-top: 27px;
     height: 31px;
     margin-top: -5px;
+    //padding-bottom: 16px;
   }
 
   .main-nav__item--sale {

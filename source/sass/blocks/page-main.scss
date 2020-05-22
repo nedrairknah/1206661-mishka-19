@@ -15,6 +15,12 @@
   width: 320px;
 }
 
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .page-main__wrapper {
+    background-image: url("../img/hero-mobile@2x.jpg");
+  }
+}
+
 .page-main__header {
   font-size: 27px;
   font-weight: bold;
@@ -44,7 +50,14 @@
     width: 768px;
     position: relative;
   }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .page-main__wrapper {
+      background-image: url("../img/hero-tablet@2x.jpg");
+    }
+  }
 }
+
 
 @media (min-width: 1150px) {
   .page-main__wrapper {
@@ -55,5 +68,11 @@
     position: relative;
     background-color: #f0f0f0;
     background-size: 100%;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .page-main__wrapper {
+      background-image: url("../img/hero-desktop@2x.jpg");
+    }
   }
 }

@@ -110,13 +110,14 @@
   }
 
   .offer__image {
-    display: none;
+    padding-left: 54px;
+    padding-top: 56px;
   }
 
-  .offer__image--tablet {
-    display: block;
-    padding: 57px 0 0 3px;
-  }
+  // .offer__image--tablet {
+  //   display: block;
+  //   padding: 57px 0 0 3px;
+  // }
 
   .offer__list {
     padding: 19px 0 0 20px;
@@ -178,6 +179,7 @@
     text-align: center;
     padding-left: 23px;
     padding-top: 1px;
+    margin-top: 14px;
   }
 }
 
@@ -199,17 +201,19 @@
   }
 
   .offer__image {
-    display: none;
+    padding-left: 69px;
+    margin-top: -169px;
+    z-index: -5;
   }
 
-  .offer__image--desktop {
-    display: block;
-    margin-top: -142px;
-    padding-left: 69px;
-    z-index: -5;
-    margin-left: 0;
-    margin-right: 0;
-  }
+  // .offer__image--desktop {
+  //   display: block;
+  //   margin-top: -142px;
+  //   padding-left: 69px;
+  //   z-index: -5;
+  //   margin-left: 0;
+  //   margin-right: 0;
+  // }
 
   .offer {
     width: 100%;
@@ -225,5 +229,6 @@
     padding-left: 37px;
     padding-top: 122px;
     order: 2;
+    z-index: 10;
   }
 }

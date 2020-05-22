@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Магазин "Мишка"</title>
-        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="css/style.min.css" rel="stylesheet" type="text/css">
     </head>
 
     <body class="body">
@@ -14,7 +14,14 @@
 
             <div class="page-header__wrapper">
               <a class="page-header__logo" href="index.html">
-              <img class="page-header__logo-image"
+                <picture>
+                  <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                  <img class="page-header__logo-image" src="img/logo-mobile.svg"
+                  width="86" height="35" alt="Магазин Мишка">
+                </picture>
+                <!--
+                                <img class="page-header__logo-image"
               src="img/logo-mobile.svg"
               width="86" height="35" alt="Магазин Мишка">
               <img class="page-header__logo-image
@@ -25,6 +32,8 @@
               page-header__logo-image--desktop"
               src="img/logo-desktop.svg"
               width="149" height="72" alt="Магазин Мишка">
+
+                -->
               </a>
               <button class="page-header__toggle page-header__toggle--opened" aria-label="Окрыть меню" type="button">
               </button>
