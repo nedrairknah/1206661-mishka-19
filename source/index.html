@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Магазин "Мишка"</title>
-    <link href="css/style.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
 
   <body class="body"><!--123-->
@@ -39,7 +39,7 @@
               </button>
             </div>
 
-            <ul class="main-nav__list site-list site-list--closed"><!--чтобы скрыть класс site-list--closed-->
+            <ul class="main-nav__list site-list"><!--чтобы скрыть класс site-list--closed-->
               <li class="site-list__item site-list__item--catalog">
                 <a class="main-nav__item main-nav__item--catalog" href="catalog.html">Каталог товаров</a>
               </li>
@@ -199,6 +199,7 @@
           </li>
       </ul>
       <div class="contacts__map">
+        <iframe class="contacts__iframe" src="https://yandex.ru/map-widget/v1/-/CCQjB0VE8D" width="560" height="400"></iframe>
         <img class="contacts__img" src="img/content/map-mobile@3x.jpg"
         width="320" height="457"
         alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
@@ -253,6 +254,37 @@
           </address>
         </div>
     </footer>
+    <div class="body__container container container--closed">
+      <section class="body__modal modal">
+        <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+          <h3 class="modal__header">Добавить в корзину</h3>
+          <p class="modal__text">Выберите размер:</p>
+          <ul class="modal__list">
 
+            <li class="modal__item"><input class="visually-hidden modal__filter"
+                type="radio" name="size" id="filter-s"
+                value="S" checked>
+              <label for="filter-s" class="modal__label">
+                <span class="modal__choice">S</span></label></li>
+
+            <li class="modal__item"><input class="visually-hidden modal__filter"
+                type="radio" name="size" id="filter-m"
+                value="M">
+              <label for="filter-m" class="modal__label">
+                <span class="modal__choice">M</span></label></li>
+
+            <li class="modal__item"><input class="visually-hidden modal__filter"
+                type="radio" name="size" id="filter-l"
+                value="L">
+              <label for="filter-l" class="modal__label">
+                <span class="modal__choice">L</span></label></li>
+
+          </ul>
+          <button class="modal__button" type="submit">Добавить</button>
+        </form>
+      </section>
+    </div>
+    <script type="text/javascript" src="js/mishka.min.js">
+    </script>
   </body>
 </html>

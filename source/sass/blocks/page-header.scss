@@ -41,12 +41,13 @@
   height: 20px;
   padding: 37px;
   background-position: center;
+  // display: none;//Скрыто, на основание требования 3.7
 }
 
-// .page-header__toggle--opened {
-//   background-image: url("../img/icon-menu-close.svg");
-//   background-size: 21px 20px;
-// }
+.page-header__toggle--opened {
+  background-image: url("../img/icon-menu-close.svg");
+  background-size: 21px 20px;
+}
 
 .page-header__text {
   display: none;

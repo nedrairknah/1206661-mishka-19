@@ -1,6 +1,6 @@
 .catalog {
   font-family: "OpenSans", "Arial", "Helvetica", sans-serif;
-  background-image: url("../img/hero-mobile@3x.png");
+  //background-image: url("../img/hero-mobile@3x.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -100,9 +100,11 @@
   margin: 0;
   background-color: #f1f1f1;
   margin-bottom: 30px;
-  padding-top: 71px;
-  padding-bottom: 77px;
-  padding-left: 39px;
+  padding: 71px 41px 77px 38px;
+}
+
+.catalog--products {
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
@@ -176,7 +178,7 @@
     position: absolute;
     width: 768px;
     height: 24px;
-    background-image: url("../img/bkgd/zigzag-fill-desktop-svg.svg");
+    background-image: url("../img/zigzag-fill-desktop-svg.svg");
     background-position: 0 0;
     top: 212px;
     left: 0;
@@ -187,7 +189,7 @@
   .catalog__header {
     position: relative;
     font-size: 43px;
-    padding-left: 0;
+    padding-left: 43px;
     padding-top: 95px;
     padding-bottom: 81px;
     z-index: -5;
@@ -251,7 +253,7 @@
     padding-bottom: 0;
   }
 
-  .catalog__products {
+  .catalog--products {
     display: flex;
     padding-top: 98px;
     padding-left: 49px;

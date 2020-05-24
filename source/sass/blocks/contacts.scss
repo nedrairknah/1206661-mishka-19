@@ -21,7 +21,7 @@
   width: 320px;
   height: 6px;
   display: block;
-  background-image: url("../img/bkgd/zigzag-line-desktop-svg.svg");
+  background-image: url("../img/zigzag-line-desktop-svg.svg");
   background-size: 320px 6px;
 }
 
@@ -63,12 +63,15 @@
 
 .contacts__img {
   margin: 0 auto;
-  position: relative;
+  position: absolute;
   z-index: 1;
+  top: 0;
+  left: 0;
 }
 
 .contacts__map {
   position: relative;
+  height: 457px;
 }
 
 .contacts__map::before {
@@ -79,7 +82,7 @@
   width: 67px;
   height: 100px;
   display: block;
-  background-image: url("../img/bkgd/map-pin-svg.svg");
+  background-image: url("../img/map-pin-svg.svg");
   background-size: 67px 100px;
   z-index: 2;
 }
@@ -97,7 +100,7 @@
   padding: 14px 30px 15px 49px;
   margin: 0;
   margin-left: 30px;
-  margin-top: 34px;
+  margin-top: 39px;
   margin-right: 30px;
 }
 
@@ -134,8 +137,20 @@
   display: none;
 }
 
+.contacts__iframe {
+  z-index: 1000;
+  position: relative;
+  width: 320px;
+  height: 457px;
+  border: 0;
+}
 
 @media (min-width: 768px) {
+  .contacts__iframe {
+    width: 768px;
+    padding-top: 18px;
+  }
+
   .contacts__logo {
     display: block;
   }
@@ -163,7 +178,7 @@
 
   .contacts__button {
     padding: 15px 30px 13px 27px;
-    margin: 55px 269px 10px 269px;
+    margin: 74px 269px 10px 269px;
     font-size: 17px;
     font-weight: bold;
     font-stretch: normal;
@@ -231,7 +246,7 @@
     width: 768px;
     height: 15px;
     display: block;
-    background-image: url("../img/bkgd/zigzag-line-desktop-svg.svg");
+    background-image: url("../img/zigzag-line-desktop-svg.svg");
     background-repeat: no-repeat;
     background-size: 768px 15px;
     transform: rotate(180deg);
@@ -252,6 +267,12 @@
 }
 
 @media (min-width: 1150px) {
+  .contacts__iframe {
+    width: 525px;
+    padding-left: 573px;
+    padding-top: 0;
+  }
+
   .contacts__wrapper {
     margin-top: 105px;
   }
@@ -271,7 +292,7 @@
 
   .contacts__img--desktop {
     display: block;
-    padding-left: 522px;
+    padding-left: 573px;
   }
 
   .contacts__char,

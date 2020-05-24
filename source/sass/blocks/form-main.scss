@@ -229,12 +229,10 @@
 }
 
 .form-main__input {
-  font: inherit;
   width: 260px;
   border: 0;
   border-bottom: solid 2px #000000;
   background-color: #ffffff;
-  font-size: 17px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -244,7 +242,10 @@
   color: rgba(68, 68, 68, 0.3);
   margin: 0;
   padding: 13px 0;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
+  padding-top: 12px;
+  padding-bottom: 17px;
+  font-size: 18px;
 }
 
 .form-main__input--tel {
@@ -348,6 +349,14 @@
 .form-main__header {
   padding: 71px 30px 77px 28px;
   margin: 0;
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.11;
+  letter-spacing: normal;
+  background-color: #f1f1f1;
+  text-align: center;
+  font-size: 27px;
 }
 
 
@@ -431,7 +440,7 @@
   }
 
   .form-main__names--middlename {
-    padding-bottom: 23px;
+    padding-bottom: 19px;
   }
 
 
@@ -447,7 +456,7 @@
     font-size: 19px;
     display: inline-block;
     padding-left: 218px;
-    padding-bottom: 44px;
+    padding-bottom: 47px;
     padding-right: 31px;
   }
 
@@ -489,9 +498,12 @@
   }
 
   .form-main__list--color {
-    margin-left: 185px;
-    margin-top: -63px;
+    //margin-left: 185px;
+    //margin-top: -63px;
     margin-bottom: 11px;
+    padding-top: 51px;
+    width: 582px;
+    margin-left: auto;
   }
 
   .form-main__item--chbx {
@@ -517,8 +529,8 @@
     background-color: #f1f1f1;
     border: 0;
     margin: 0;
-    padding-top: 45px;
-    margin-top: -82px;
+    //padding-top: 45px;
+    //margin-top: -82px;
   }
 
   .form-main__form {
@@ -564,15 +576,16 @@
   }
 
   .form-main__legend--bio {
-    padding-top: 68px;
+    padding-top: 66px;
     padding-left: 51px;
     margin-bottom: -40px;
   }
 
   .form-main__legend--color {
     padding: 0;
-    padding-top: 149px;
+    //padding-top: 50px;
     padding-left: 51px;
+    transform: translateY(69px);
   }
 
   .form-main__legend::before,
@@ -597,7 +610,7 @@
     position: absolute;
     width: 768px;
     height: 24px;
-    background-image: url("../img/bkgd/zigzag-fill-desktop-svg.svg");
+    background-image: url("../img/zigzag-fill-desktop-svg.svg");
     background-position: 0 0;
     top: 212px;
     left: 0;
@@ -658,19 +671,21 @@
     padding-left: 15px;
     width: 558px;
     padding-bottom: 15px;
+    padding-top: 9px;
   }
 
   .form-main__input--tel {
     margin-left: 77px;
     width: 685px;
-    padding-bottom: 16px;
+    padding-top: 13px;
+    padding-bottom: 13px;
   }
 
   .form-main__input--email {
     margin-left: 53px;
     width: 685px;
-    padding-top: 8px;
-    padding-bottom: 16px;
+    padding-top: 13px;
+    padding-bottom: 13px;
   }
 
   .form-main__input--firstname {
@@ -678,13 +693,17 @@
   }
 
   .form-main__name {
+    padding-top: 13px;
     padding-left: 226px;
     padding-right: 22px;
+    padding-bottom: 43px;
   }
 
   .form-main__list--color {
-    margin-left: 193px;
-    margin-top: -63px;
+    //margin-left: 193px;
+    //margin-top: -63px;
+    width: 955px;
+    padding-top: 50px;
   }
 
   .form-main__group {
@@ -698,17 +717,18 @@
 
   .form-main__legend--color {
     padding-left: 110px;
-    padding-top: 149px;
+    //padding-top: 149px;
   }
 
   .form-main__legend--bio {
     padding-left: 111px;
+    padding-right: 0;
   }
 
   .form-main__header {
     font-size: 53px;
-    padding-top: 84px;
-    padding-bottom: 94px;
+    padding-top: 95px;
+    padding-bottom: 100px;
   }
 
   .form-main__header::after {
@@ -726,5 +746,9 @@
 
   .form-main__input--colors {
     width: auto;
+  }
+
+  .form-main__names--middlename {
+    padding-bottom: 25px;
   }
 }
