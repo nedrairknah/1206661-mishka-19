@@ -13,6 +13,15 @@
   display: block;
 }
 
+.main-nav__item:hover,
+.main-nav__item:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.main-nav__item:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .main-nav__item--search {
   position: relative;
 }
@@ -27,8 +36,19 @@
   background-image: url("../img/icon-search.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  color: #ffffff;
   opacity: 0.2;
+  z-index: 400;
+}
+
+.main-nav__item--search:hover::before,
+.main-nav__item--search:focus::before {
+  background-image: url("../img/icon-search-aqua.svg");
+  opacity: 1;
+}
+
+.main-nav__item--search:active::before {
+  background-image: url("../img/icon-search-aqua.svg");
+  opacity: 0.3;
 }
 
 
@@ -47,6 +67,17 @@
   background-position: 0 0;
   color: #ffffff;
   opacity: 0.2;
+}
+
+.main-nav__item--bin:hover::before,
+.main-nav__item--bin:focus::before {
+  background-image: url("../img/icon-cart-aqua.svg");
+  opacity: 1;
+}
+
+.main-nav__item--bin:active::before {
+  background-image: url("../img/icon-cart-aqua.svg");
+  opacity: 0.3;
 }
 
 @media (min-width: 768px) {

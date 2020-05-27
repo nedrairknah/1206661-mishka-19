@@ -193,6 +193,28 @@
   background-position: center;
 }
 
+.about__button:focus,
+.about__button:hover {
+  opacity: 0.6;
+  border: 0;
+}
+
+.about__button:active {
+  opacity: 0.3;
+  border: 0;
+}
+
+.about__send:focus,
+.about__send:hover {
+  background-color: #444444;
+  color: #ffffff;
+}
+
+.about__send:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
 @media (min-width: 768px) {
   .about__item--price::before {
     left: 1px;

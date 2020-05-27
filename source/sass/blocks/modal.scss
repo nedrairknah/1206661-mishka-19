@@ -91,6 +91,10 @@
   //padding: 18px 34px;
 }
 
+.modal__choice:hover {
+  border: solid 2px rgba(68, 68, 68, 0.3);
+}
+
 .modal__filter:checked + .modal__label::after {
   content: "";
   display: block;
@@ -103,6 +107,7 @@
   //top: 18px; for Firefox
   border: solid 2px #63d1bb;
 }
+
 
 .modal__choice {
   font-size: 17px;

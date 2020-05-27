@@ -26,6 +26,19 @@
   align-items: center;
 }
 
+// .page-header__logo:hover {
+//   opacity: 0.6;
+// }
+
+.page-header__logo-image:focus,
+.page-header__logo-image:hover {
+  opacity: 0.6;
+}
+
+.page-header__logo-image:active {
+  opacity: 0.3;
+}
+
 .page-header__logo-image--tablet,
 .page-header__logo-image--desktop {
   display: none;
@@ -50,6 +63,10 @@
 }
 
 .page-header__text {
+  display: none;
+}
+
+.page-header__toggle--hide {
   display: none;
 }
 
