@@ -75,6 +75,7 @@
 
 .form-main__connect--email {
   padding-top: 6px;
+  position: relative;
 }
 
 
@@ -134,9 +135,16 @@
   position: relative;
 }
 
-.form-main__label:hover::before {
+.form-main__label:hover::before,
+.form-main__label:focus::before {
   border: 2px solid #62d1ba;
 }
+
+.form-main__label:active::before {
+  border: 2px solid #444444;
+  opacity: 0.3;
+}
+
 
 .form-main__label::before {
   position: absolute;
@@ -196,8 +204,14 @@
   border: 2px solid #444444;
 }
 
-.form-main__label-chbx:hover::before {
+.form-main__label-chbx:hover::before,
+.form-main__label-chbx:focus::before {
   border: 2px solid #62d1ba;
+}
+
+.form-main__label-chbx:active::before {
+  border: 2px solid #444444;
+  opacity: 0.3;
 }
 
 .form-main__input:focus + .form-main__label-chbx::before {
@@ -229,22 +243,23 @@
 }
 
 .form-main__input {
-  font: inherit;
   width: 260px;
   border: 0;
   border-bottom: solid 2px #000000;
   background-color: #ffffff;
-  font-size: 17px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.06;
   letter-spacing: normal;
   text-align: left;
-  color: rgba(68, 68, 68, 0.3);
+  // color: rgba(68, 68, 68, 0.3);
   margin: 0;
   padding: 13px 0;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
+  padding-top: 12px;
+  padding-bottom: 17px;
+  font-size: 18px;
 }
 
 .form-main__input--tel {
@@ -255,6 +270,22 @@
 
 .form-main__input--email {
   padding-top: 19px;
+}
+
+.form-main__input--tel:hover,
+.form-main__input--tel:focus {
+  border-bottom: solid 2px #62d1ba;
+}
+
+.form-main__input--tel:active {
+  border-bottom: solid 2px #62d1ba;
+  color: #444444;
+}
+
+.form-main__input--email:hover,
+.form-main__input--email:focus,
+.form-main__input--email:active {
+  border-bottom: solid 2px #62d1ba;
 }
 
 .form-main__contacts--tel {
@@ -309,6 +340,18 @@
   line-height: 1.06;
   letter-spacing: normal;
   text-align: left;
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.form-main__textarea:hover,
+.form-main__textarea:focus {
+  border: solid 2px #62d1ba;
+}
+
+.form-main__textarea:active {
+  border: solid 2px #62d1ba;
+  color: red;
+  opacity: 1;
 }
 
 .form-main__cite {
@@ -341,6 +384,16 @@
   margin-bottom: 16px;
 }
 
+.form-main__button:focus,
+.form-main__button:hover {
+  background-color: #444444;
+  color: #ffffff;
+}
+
+.form-main__button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .form-main__input--colors {
   width: 150px;
 }
@@ -348,10 +401,88 @@
 .form-main__header {
   padding: 71px 30px 77px 28px;
   margin: 0;
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.11;
+  letter-spacing: normal;
+  background-color: #f1f1f1;
+  text-align: center;
+  font-size: 27px;
 }
 
+.form-main__input--name:hover,
+.form-main__input--name:focus {
+  border-bottom: solid 2px #62d1ba;
+}
+
+.form-main__input--name:active {
+  border-bottom: solid 2px #62d1ba;
+  color: rgba(68, 68, 68, 1);
+}
+
+.form-main__connect--tel {
+  position: relative;
+}
+
+.form-main__phone-icon {
+  position: absolute;
+  right: 37px;
+  top: 42px;
+  opacity: 0.2;
+}
+
+.form-main__email-icon {
+  position: absolute;
+  right: 31px;
+  top: 42px;
+}
+
+.form-main__input--tel:hover + .form-main__phone-icon {
+  opacity: 1;
+  fill: #62d1ba;
+}
+
+.form-main__input--tel:active + .form-main__phone-icon {
+  fill: #62d1ba;
+  opacity: 1;
+}
+//
+.form-main__email-icon path {
+  opacity: 0.2;
+}
+
+.form-main__input--email:hover + .form-main__email-icon path {
+  opacity: 1;
+  fill: #62d1ba;
+}
+
+.form-main__input--email:active + .form-main__email-icon path {
+  fill: #62d1ba;
+  opacity: 1;
+}
+
+.form-main__input,
+.form-main__textarea {
+  color: #444444;
+}
+
+.form-main__input::placeholder,
+.form-main__textarea::placeholder {
+  color: rgba(68, 68, 68, 0.3);
+}
 
 @media (min-width: 768px) {
+  .form-main__phone-icon {
+    right: 75px;
+    top: 59px;
+  }
+
+  .form-main__email-icon {
+    right: 72px;
+    top: 13px;
+  }
+
   .form-main__button {
     margin-top: -64px;
     display: block;
@@ -431,7 +562,7 @@
   }
 
   .form-main__names--middlename {
-    padding-bottom: 23px;
+    padding-bottom: 19px;
   }
 
 
@@ -447,7 +578,7 @@
     font-size: 19px;
     display: inline-block;
     padding-left: 218px;
-    padding-bottom: 44px;
+    padding-bottom: 47px;
     padding-right: 31px;
   }
 
@@ -489,9 +620,12 @@
   }
 
   .form-main__list--color {
-    margin-left: 185px;
-    margin-top: -63px;
+    //margin-left: 185px;
+    //margin-top: -63px;
     margin-bottom: 11px;
+    padding-top: 51px;
+    width: 582px;
+    margin-left: auto;
   }
 
   .form-main__item--chbx {
@@ -517,8 +651,8 @@
     background-color: #f1f1f1;
     border: 0;
     margin: 0;
-    padding-top: 45px;
-    margin-top: -82px;
+    //padding-top: 45px;
+    //margin-top: -82px;
   }
 
   .form-main__form {
@@ -564,15 +698,16 @@
   }
 
   .form-main__legend--bio {
-    padding-top: 68px;
+    padding-top: 66px;
     padding-left: 51px;
     margin-bottom: -40px;
   }
 
   .form-main__legend--color {
     padding: 0;
-    padding-top: 149px;
+    //padding-top: 50px;
     padding-left: 51px;
+    transform: translateY(69px);
   }
 
   .form-main__legend::before,
@@ -597,7 +732,7 @@
     position: absolute;
     width: 768px;
     height: 24px;
-    background-image: url("../img/bkgd/zigzag-fill-desktop-svg.svg");
+    background-image: url("../img/zigzag-fill-desktop-svg.svg");
     background-position: 0 0;
     top: 212px;
     left: 0;
@@ -622,6 +757,16 @@
 }
 
 @media (min-width: 1150px) {
+  .form-main__phone-icon {
+    right: 236px;
+    top: 60px;
+  }
+
+  .form-main__email-icon {
+    right: 228px;
+    top: 15px;
+  }
+
   .form-main__cite {
     padding-top: 58px;
     padding-left: 625px;
@@ -658,19 +803,21 @@
     padding-left: 15px;
     width: 558px;
     padding-bottom: 15px;
+    padding-top: 9px;
   }
 
   .form-main__input--tel {
     margin-left: 77px;
     width: 685px;
-    padding-bottom: 16px;
+    padding-top: 13px;
+    padding-bottom: 13px;
   }
 
   .form-main__input--email {
     margin-left: 53px;
     width: 685px;
-    padding-top: 8px;
-    padding-bottom: 16px;
+    padding-top: 13px;
+    padding-bottom: 13px;
   }
 
   .form-main__input--firstname {
@@ -678,13 +825,17 @@
   }
 
   .form-main__name {
+    padding-top: 13px;
     padding-left: 226px;
     padding-right: 22px;
+    padding-bottom: 43px;
   }
 
   .form-main__list--color {
-    margin-left: 193px;
-    margin-top: -63px;
+    //margin-left: 193px;
+    //margin-top: -63px;
+    width: 955px;
+    padding-top: 50px;
   }
 
   .form-main__group {
@@ -698,17 +849,18 @@
 
   .form-main__legend--color {
     padding-left: 110px;
-    padding-top: 149px;
+    //padding-top: 149px;
   }
 
   .form-main__legend--bio {
     padding-left: 111px;
+    padding-right: 0;
   }
 
   .form-main__header {
     font-size: 53px;
-    padding-top: 84px;
-    padding-bottom: 94px;
+    padding-top: 95px;
+    padding-bottom: 100px;
   }
 
   .form-main__header::after {
@@ -726,5 +878,9 @@
 
   .form-main__input--colors {
     width: auto;
+  }
+
+  .form-main__names--middlename {
+    padding-bottom: 25px;
   }
 }
